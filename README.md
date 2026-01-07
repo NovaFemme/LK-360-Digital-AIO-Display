@@ -1,6 +1,6 @@
 # LK Digital Display
 
-A Windows service application for GAMDIAS ATLAS AIO cooler LCD displays, providing real-time CPU and GPU monitoring.
+A Windows service application for Xigmatek LK 360 Digital AIO cooler LCD displays, providing real-time CPU and GPU monitoring.
 
 ## Features
 
@@ -30,7 +30,7 @@ A Windows service application for GAMDIAS ATLAS AIO cooler LCD displays, providi
 
 | Device | VID | PID | Status |
 |--------|-----|-----|--------|
-| GAMDIAS ATLAS | 0x1B80 | 0xB538 | ✅ Supported |
+| Xigmatek LK 360 Digital | 0x1B80 | 0xB538 | ✅ Supported |
 | HWCX Controller | 0x0145 | 0x1005 | ✅ Supported |
 
 ## Requirements
@@ -292,4 +292,4 @@ This project is provided as-is for personal use.
 - Improved logging and diagnostics
 
 ### v2.0.0
-- Initial release with GAMDIAS ATLAS support
+- Initial release with Xigmatek LK 360 Digital support
