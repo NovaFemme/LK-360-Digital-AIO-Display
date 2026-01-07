@@ -23,7 +23,6 @@ bld/
 *.userprefs
 
 # Build results
-*.dll
 *.exe
 *.pdb
 *.ilk
