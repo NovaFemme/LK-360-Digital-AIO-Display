@@ -7,20 +7,10 @@ namespace LK_Digital_Display
     {
       private static void Main(string[] args)
       {
-            if (Environment.UserInteractive)
+            ServiceBase.Run(new ServiceBase[1]
             {
-                var service = new LKDigitalDisplay();
-                service.RunAsConsole(args);
-            }
-            else
-            {
-                ServiceBase.Run(new ServiceBase[1]
-                {
-                  (ServiceBase) new LKDigitalDisplay()
-                });
-            }
-
-            
+              (ServiceBase) new LKDigitalDisplay()
+            });
       }
     }
 }
