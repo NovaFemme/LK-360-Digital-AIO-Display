@@ -168,7 +168,7 @@ namespace HidDeviceLib
         private readonly List<UsbFilter> _usbFilters = new List<UsbFilter>();
         private readonly Dictionary<int, HidContext> _devices = new Dictionary<int, HidContext>();
         private int _maxDevices = 20;
-        private bool _debugLogging = true; // ENABLED BY DEFAULT FOR DIAGNOSTICS
+        private bool _debugLogging = false;
         private bool _disposed = false;
 
         // System info storage
