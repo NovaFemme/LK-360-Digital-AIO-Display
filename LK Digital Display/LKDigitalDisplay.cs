@@ -16,7 +16,6 @@ namespace LK_Digital_Display
 
       protected override void OnStart(string[] args)
       {
-            Console.WriteLine("Service Started.");
             try
             {
               if (this.xkw != null)
@@ -37,7 +36,6 @@ namespace LK_Digital_Display
 
       protected override void OnStop()
       {
-            Console.WriteLine("Service Stopped.");
             try
             {
               if (this.xkw == null)
@@ -57,19 +55,10 @@ namespace LK_Digital_Display
         base.Dispose(disposing);
       }
 
-        public void RunAsConsole(string[] args)
-        {
-            OnStart(args);
-            this.components = (IContainer)new System.ComponentModel.Container();
-            Console.WriteLine("Press any key to stop...");
-            Console.ReadLine(); // Keep the app running
-            //OnStop();
-        }
-
-      //  private void InitializeComponent()
-      //{
-      //  this.components = (IContainer) new System.ComponentModel.Container();
-      //  this.ServiceName = "Service1";
-      //}
+      private void InitializeComponent()
+      {
+        this.components = (IContainer) new System.ComponentModel.Container();
+        this.ServiceName = "Service1";
+      }
     }
 }
